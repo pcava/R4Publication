@@ -2,7 +2,9 @@
 title: 'R Course: Lesson 3'
 author: "Paolo Cavatore"
 date: "19 giugno 2016"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 
