@@ -1,0 +1,54 @@
+---
+title: 'R Course: Lesson 2'
+author: "Paolo Cavatore"
+date: "19 giugno 2016"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+```{r}
+rm(list=ls())
+load("rcourse_lesson2_environment.RData")
+```
+
+# Introduction
+
+I looked at how common my name, "Page", is in the United States population both by year and sex.
+
+
+# Results
+
+## Prevalence by Year
+
+Below is a plot for how the proportion of people with the name "Page" (log base 10 transformed) has changed over time. Overall the trend is pretty flat, with maybe a slight increase over time.
+
+```{r, fig.align='center'}
+year.plot
+```
+
+To test if there is a significant effect of year a linear model was built. Proportion of the population log base 10 transformed was the dependent variable and year the independent variable. As shown below, year was not significant, although the coefficients do show a positive slope.
+
+```{r}
+year.lm_sum
+```
+
+## Prevalence by Sex
+
+Below is a plot for the proportion of people with the name "Page" (log base 10 transformed) by sex. It appears there is a clear effect of sex, where it is a less popular name for males than females.
+
+```{r, fig.align='center'}
+sex.plot
+```
+
+To test if there is a significant effect of sex a linear model was built. Proportion of the population log base 10 transformed was the dependent variable and sex the independent variable. As show below, sex was significant, with the name being less common in males than females [R^2^ = 0.15, F(1, 172) = 32.23, *p* < 0.001].
+
+```{r}
+sex.lm_sum
+```
+
+
+# Conclusion
+
+The name "Page" has had pretty steady popularity over time but is more common in females than males.

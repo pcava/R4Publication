@@ -1,6 +1,6 @@
 rm(list=ls())
 
-#setwd(paste0(getwd(),"/rcourse_lesson1"))
+setwd(paste0(getwd(),"/rcourse_lesson1"))
       
 ## LOAD PACKAGES ####
 library(dplyr)

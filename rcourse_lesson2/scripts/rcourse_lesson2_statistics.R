@@ -44,3 +44,6 @@ sex.lm_resid = resid(sex.lm)
 
 # Call first first residuals
 head(sex.lm_resid)
+
+
+save.image("F:/R/Paolo/R4Publication/rcourse_lesson2/reports/rcourse_lesson2_environment.RData")

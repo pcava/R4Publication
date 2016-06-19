@@ -8,6 +8,7 @@ output:
 ---
 
 ```{r}
+rm(list=ls())
 load("rcourse_lesson1_environment.RData")
 ```
 
