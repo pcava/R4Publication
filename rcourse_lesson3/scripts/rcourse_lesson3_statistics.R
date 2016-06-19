@@ -1,5 +1,3 @@
-rm(list=ls())
-
 ## READ IN DATA ####
 source("scripts/rcourse_lesson3_cleaning.R")
 
@@ -40,3 +38,5 @@ posey_walked.glm_sum = summary(posey_walked.glm)
 
 # Call summary of model
 posey_walked.glm_sum
+
+save.image("reports/rcourse_lesson3_environment.RData")

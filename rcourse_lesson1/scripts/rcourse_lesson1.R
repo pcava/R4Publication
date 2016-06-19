@@ -143,4 +143,4 @@ data_bl_sum = data_bl %>%
 
 data_bl_sum
 
-save.image("F:/R/Paolo/R4Publication/rcourse_lesson1/reports/rcourse_lesson1_environment.RData")
+save.image("reports/rcourse_lesson1_environment.RData")

@@ -1,5 +1,3 @@
-rm(list=ls())
-
 ## READ IN DATA ####
 source("scripts/rcourse_lesson2_cleaning.R")
 
@@ -46,4 +44,4 @@ sex.lm_resid = resid(sex.lm)
 head(sex.lm_resid)
 
 
-save.image("F:/R/Paolo/R4Publication/rcourse_lesson2/reports/rcourse_lesson2_environment.RData")
+save.image("reports/rcourse_lesson2_environment.RData")

@@ -1,5 +1,3 @@
-rm(list=ls())
-
 ## READ IN DATA ####
 source("scripts/rcourse_lesson3_cleaning.R")
 

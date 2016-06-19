@@ -1,5 +1,3 @@
-rm(list=ls())
-
 #setwd(paste0(getwd(),"/rcourse_lesson2"))
 
 ## LOAD PACKAGES ####
