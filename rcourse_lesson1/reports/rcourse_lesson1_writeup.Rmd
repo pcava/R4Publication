@@ -1,0 +1,29 @@
+---
+title: 'R Course: Lesson 1'
+author: "Paolo Cavatore"
+date: "19 giugno 2016"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+load("rcourse_lesson1_environment.RData")
+``` 
+
+# Data
+
+Here is a look at our two data frames. First is the one we read in, the second is our subset of just the bilinguals' data.
+
+```{r}
+head(data)
+head(data_bl)
+```
+
+# Figures
+
+Here's a figure of the bilinguals compared to the monolinguals.
+
+```{r, fig.align='center'}
+data.plot
+```
