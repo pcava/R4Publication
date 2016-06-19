@@ -34,3 +34,30 @@ tail(data_bl)
 xtabs(~group, data_bl)
 xtabs(~type, data_bl)
 
+
+## MAKE FIGURES ####
+# By group
+data.plot = ggplot(data, aes(x = group, y = rt)) +
+  # Make the figure a boxplot, fill says to what the color should correspond to,
+  # here it is the same as the x variable
+  geom_boxplot(aes(fill = group)) +
+  # Add a title
+  ggtitle("Reaction Times by Group") +
+  # Customize the x-axis label
+  xlab("Group") +
+  # Customize the y-axis label
+  ylab("Reaction times in ms") +
+  # Remove dark background
+  theme_classic() +
+  # These are extras to make the figure (in my opinion) prettier,
+  # look up each command to learn more
+  theme(text=element_text(size=18), title=element_text(size=18),
+        legend.position="none")
+
+# Write figure to a pdf in the 'figures' folder
+pdf("figures/data.pdf")
+# Call plot
+data.plot
+# Close pdf call
+dev.off()
+
