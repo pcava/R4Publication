@@ -3,8 +3,8 @@ title: 'R Course: Lesson 1'
 author: "Paolo Cavatore"
 date: "19 giugno 2016"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r}
