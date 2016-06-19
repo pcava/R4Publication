@@ -1,6 +1,6 @@
 rm(list=ls())
 
-setwd(paste0(getwd(),"/rcourse_lesson2"))
+#setwd(paste0(getwd(),"/rcourse_lesson2"))
 
 ## LOAD PACKAGES ####
 library(dplyr)
@@ -12,7 +12,7 @@ data = read.table("data/rcourse_lesson2_data.txt", header=T, sep="\t")
 ## CLEAN DATA ####
 data_clean = data %>%
   # Look at only one name
-  filter(name == "Paul") %>%
+  filter(name == "Page") %>%
   # --> PP NOTE: Add in after first xtabs call too crazy
   # Drop residual information of other names from data frame
   mutate(name = factor(name)) %>%
