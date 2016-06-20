@@ -78,3 +78,5 @@ incumbent_democrat.ttest
 incumbent_republican.ttest = t.test(perc_incumbent_mean ~ civil_war, paired = F, data = data_republican_stats)
 incumbent_republican.ttest
 
+
+save.image("reports/rcourse_lesson5_environment.RData")

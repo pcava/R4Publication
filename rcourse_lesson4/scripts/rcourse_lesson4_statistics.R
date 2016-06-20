@@ -61,4 +61,5 @@ extinct_seriesxalignment_friend.glm = glm(extinct ~ series * relevel(alignment, 
 extinct_seriesxalignment_friend.glm_sum = summary(extinct_seriesxalignment_friend.glm)
 extinct_seriesxalignment_friend.glm_sum
 
+
 save.image("reports/rcourse_lesson4_environment.RData")
